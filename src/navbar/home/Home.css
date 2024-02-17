@@ -1,0 +1,25 @@
+.home {
+  text-align: left; 
+  padding: 30px 100px; 
+}
+
+.event-cards {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+  gap: 20px; 
+  justify-content: center; 
+
+  transition: max-width 1s ease, max-height 1s ease;
+
+  @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  }
+
+  @media screen and (max-width: 480px) {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.home h1 {
+  margin-bottom: 20px; 
+}
